@@ -86,7 +86,7 @@ abstract class MarkdownElementBuilder {
     TextStyle? preferredStyle,
     TextStyle? parentStyle,
   ) {
-    return visitElementAfter(element, preferredStyle);
+    return visitElementAfterWithContext(element, preferredStyle);
   }
 
   /// Called when an Element has been reached, after its children have been
